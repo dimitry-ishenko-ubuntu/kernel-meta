@@ -1,0 +1,28 @@
+Source: kernel-meta
+Priority: important
+Section: metapackages
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Build-Depends: debhelper-compat (= 12),
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: kernel-meta
+Architecture: amd64 arm64 armhf
+Depends: initramfs-tools, linux-generic, systemd-boot
+Provides: grub
+Description: kernel-meta
+ Kernel meta-package
+
+Package: kernel-rpi-meta
+Architecture: amd64 arm64 armhf
+Depends: flash-kernel, initramfs-tools, linux-firmware-raspi, linux-raspi, u-boot-rpi
+Provides: grub
+Description: kernel-rpi-meta
+ Kernel meta-package (RPi)
+
+Package: kernel-armbian-meta
+Architecture: amd64 arm64 armhf
+Depends: armbian-firmware, armbian-u-boot, initramfs-tools, linux-dtb-armbian, linux-image-armbian
+Provides: grub
+Description: kernel-armbian-meta
+ Kernel meta-package (Armbian)
