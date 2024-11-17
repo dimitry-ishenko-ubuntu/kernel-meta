@@ -1,5 +1,6 @@
-kernel-meta (1.0) UNRELEASED; urgency=medium
+kernel-meta (1.0) unstable; urgency=medium
 
-  * Initial release.
+  * Import existing project
+  * Initial commit
 
- -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 16 Nov 2024 18:45:17 -0500
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 16 Nov 2024 19:10:00 -0500
